@@ -2,16 +2,7 @@ import pandas as pd
 
 
 def label_dataset(positive_file, negative_file, output_file):
-    """
-    Label a dataset with sequences from positive and negative samples.
-    Positive samples will be labeled as 1, and negative samples as 0.
-    The final dataset will be shuffled to mix positive and negative sequences.
 
-    Parameters:
-    - positive_file: Path to the Excel file containing positive samples.
-    - negative_file: Path to the Excel file containing negative samples.
-    - output_file: Path to save the labeled dataset.
-    """
     # Load the positive dataset
     positive_df = pd.read_excel(positive_file)
     positive_df['Label'] = 1
