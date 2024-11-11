@@ -4,12 +4,6 @@ from sequence_models.constants import trR_ALPHABET
 
 
 
-trR_ALPHABET = "ARNDCQEGHILKMFPSTWYV-"
-
-trR_ALPHABET_DICT = {char: idx for idx, char in enumerate(trR_ALPHABET)}
-print(trR_ALPHABET_DICT)
-
-
 def tokenize_sequence(sequence, alphabet_dict):
     """
     Converts each character in the sequence to its corresponding integer token using the alphabet dictionary.
